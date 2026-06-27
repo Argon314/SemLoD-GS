@@ -1,0 +1,6 @@
+# Example configuration for SemLoD-GS
+model: SemLoD-GS
+dataset: Large-scale
+lod:
+  semantic_aware: true
+  temporal_consistency: true
