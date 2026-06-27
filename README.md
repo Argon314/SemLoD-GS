@@ -12,27 +12,27 @@ The complete training and evaluation code will be released upon acceptance.
 
 ## Framework
 
-The overall framework of SemLoD-GS is shown below. The method first constructs semantic structure anchors from SfM point clouds and multi-view image features, then performs semantic-aware LOD scheduling and temporal consistency optimization for efficient and stable rendering.
+The overall framework of SemLoD-GS is shown below.
 
-![Overall framework](framework.png)
+![Overall framework](assets/framework.png)
 
 ## Qualitative Results on the Large-scale Dataset
 
-The following figure shows qualitative comparison results on the Large-scale dataset. SemLoD-GS preserves more structural details in large-scale scenes, including building contours, road boundaries, parking areas, and distant structures.
+The following figure shows qualitative comparison results on the Large-scale dataset.
 
-![Qualitative comparison on the Large-scale dataset](qualitative_large.png)
+![Qualitative comparison on the Large-scale dataset](assets/qualitative_large.png)
 
 ## Gaussian Primitive Visualization
 
-The following visualization shows rendered 2D images together with the corresponding Gaussian primitives. SemLoD-GS preserves fine background details with high visual quality while maintaining real-time rendering performance.
+The following visualization shows rendered 2D images together with the corresponding Gaussian primitives.
 
-![Gaussian primitive visualization](gaussian_primitives.png)
+![Gaussian primitive visualization](assets/gaussian_primitives.png)
 
 ## Temporal Stability Visualization
 
-The following figure shows temporal stability visualization across consecutive views. By introducing temporal consistency optimization, SemLoD-GS reduces flickering and level popping during continuous scene roaming.
+The following figure shows temporal stability visualization across consecutive views.
 
-![Temporal stability visualization](temporal_stability.png)
+![Temporal stability visualization](assets/temporal_stability.png)
 
 ## Repository Status
 
