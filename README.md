@@ -14,25 +14,25 @@ The complete training and evaluation code will be released upon acceptance.
 
 The overall framework of SemLoD-GS is shown below.
 
-![Overall framework](assets/framework.png)
+![Overall framework](asset/framework.png)
 
 ## Qualitative Results on the Large-scale Dataset
 
-The following figure shows qualitative comparison results on the Large-scale dataset.
+The following figure shows qualitative comparison results on the Large-scale dataset. SemLoD-GS preserves more structural details in large-scale scenes, including building contours, road boundaries, parking areas, and distant structures.
 
-![Qualitative comparison on the Large-scale dataset](assets/qualitative_large.png)
+![Qualitative comparison on the Large-scale dataset](asset/qualitative_large.png)
 
 ## Gaussian Primitive Visualization
 
-The following visualization shows rendered 2D images together with the corresponding Gaussian primitives.
+The following visualization shows rendered 2D images together with the corresponding Gaussian primitives. SemLoD-GS preserves fine background details with high visual quality while maintaining real-time rendering performance.
 
-![Gaussian primitive visualization](assets/gaussian_primitives.png)
+![Gaussian primitive visualization](asset/gaussian_primitives.png)
 
 ## Temporal Stability Visualization
 
-The following figure shows temporal stability visualization across consecutive views.
+The following figure shows temporal stability visualization across consecutive views. By introducing temporal consistency optimization, SemLoD-GS reduces flickering and level popping during continuous scene roaming.
 
-![Temporal stability visualization](assets/temporal_stability.png)
+![Temporal stability visualization](asset/temporal_stability.png)
 
 ## Repository Status
 
