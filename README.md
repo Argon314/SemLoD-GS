@@ -1,23 +1,59 @@
 # SemLoD-GS
 
-This repository provides the partial implementation and supplementary materials for the paper:
+This repository provides partial implementation materials and supplementary visualization results for the paper:
 
 **SemLoD-GS: Semantic Guidance for Level of Detail Gaussian Splatting in Large-scale Scene Reconstruction**
 
-## Status
-
-The current version includes partial code, configuration examples, visualization materials, and supplementary results. The complete training and evaluation code will be released upon acceptance.
-
 ## Overview
 
-SemLoD-GS is a semantic-aware hierarchical 3D Gaussian Splatting method for large-scale scene reconstruction. It organizes local Gaussian primitives with semantic structure anchors, performs semantic-aware Level-of-Detail (LOD) scheduling, and introduces cross-view temporal consistency optimization for stable real-time rendering.
+SemLoD-GS is a semantic-aware hierarchical 3D Gaussian Splatting method for large-scale scene reconstruction. It organizes local Gaussian primitives with semantic structure anchors, performs semantic-aware Level-of-Detail (LOD) scheduling, and introduces cross-view temporal consistency optimization to improve rendering stability during large-scale scene roaming.
 
-## Contents
+The complete training and evaluation code will be released upon acceptance.
 
-- `configs/`: example configuration files
-- `scripts/`: example running and visualization scripts
-- `assets/`: qualitative visualization results and supplementary figures
+## Framework
 
-## Code Release
+The overall framework of SemLoD-GS is shown below. The method first constructs semantic structure anchors from SfM point clouds and multi-view image features, then performs semantic-aware LOD scheduling and temporal consistency optimization for efficient and stable rendering.
 
-The complete implementation, including training, evaluation, and data preprocessing scripts, will be made publicly available after acceptance.
+![Overall framework](总图.png)
+
+## Qualitative Results on the Large-scale Dataset
+
+The following figure shows qualitative comparison results on the Large-scale dataset. SemLoD-GS preserves more structural details in large-scale scenes, including building contours, road boundaries, parking areas, and distant structures.
+
+![Qualitative comparison on the Large-scale dataset](实验2.png)
+
+## Gaussian Primitive Visualization
+
+The following visualization shows rendered 2D images together with the corresponding Gaussian primitives. SemLoD-GS preserves fine background details with high visual quality while maintaining real-time rendering performance.
+
+![Gaussian primitive visualization](GS.png)
+
+## Temporal Stability Visualization
+
+The following figure shows temporal stability visualization across consecutive views. By introducing temporal consistency optimization, SemLoD-GS reduces flickering and level popping during continuous scene roaming.
+
+![Temporal stability visualization](时序对比.png)
+
+## Repository Status
+
+The current version includes:
+
+* Partial implementation materials
+* Visualization results
+* Supplementary figures
+* Example configuration and running instructions to be updated
+
+The full source code, training scripts, evaluation scripts, and detailed documentation will be made publicly available after acceptance.
+
+## Citation
+
+If you find this work useful, please consider citing our paper:
+
+```bibtex
+@article{chen2026semlodgs,
+  title={SemLoD-GS: Semantic Guidance for Level of Detail Gaussian Splatting in Large-scale Scene Reconstruction},
+  author={Chen, Wentao and Zou, Yaqi and Chen, Zhong and Wang, Fahou and Li, Hui},
+  journal={IEEE Transactions on Visualization and Computer Graphics},
+  year={2026}
+}
+```
